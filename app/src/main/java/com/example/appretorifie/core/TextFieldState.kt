@@ -1,4 +1,5 @@
 package com.example.appretorifie.core
 
-class TextFieldState {
-}
+data class TextFieldState(
+    val text: String = ""
+)

@@ -33,4 +33,8 @@ class NotesRepository(private val notesDao: NotesDao){
         }
     }
 
+    suspend fun findById(id:Int):Note{
+        return notesDao.getById(id)
+    }
+
 }
